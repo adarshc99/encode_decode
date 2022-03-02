@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel = "stylesheet">
 </head>
 <body>
-    <h1>hello</h1>
+    <div id="Endiv">
+        <span>Enter text to encode<input type="text"  id="en_text"></span><br>
+        <span>Your Key is<input type="text" id="en_key"></span><br>
+        <span>Encrypted Text is<input type="text"  id="encrypted_text"></span><br>
+        <button onclick="encypt()"> Encrypt_text</button>
+        <button  id="abc" disabled> Decrypt Text</button>
+    </div>
+
+    <!-- <div id="Endiv">
+        <span>Enter text to encode</span><input type="text"  id="en_text"><br>
+        <span>Your Key is</span><input type="text" id="en_key"><br>
+        <span>Encrypted Text is</span><input type="text"  id="encrypted_text">
+    </div> -->
+    <script src="main.js"></script>
 </body>
 </html>
