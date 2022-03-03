@@ -8,19 +8,39 @@
     <link href="style.css" rel = "stylesheet">
 </head>
 <body>
-    <div id="Endiv">
-        <span>Enter text to encode<input type="text"  id="en_text"></span><br>
-        <span>Your Key is<input type="text" id="en_key"></span><br>
-        <span>Encrypted Text is<input type="text"  id="encrypted_text"></span><br>
-        <button onclick="encypt()"> Encrypt_text</button>
-        <button  id="abc" disabled> Decrypt Text</button>
+    <div id="header">Welocme to E&D</div>
+    <p id="display_error">Please input all the feilds<a href="#" onclick="disable('display_error')">X</a></p>
+    <div id="wrapper">
+        
+        <p id="id1">Encrypt Text</p>
+        <div id="input_feild">
+            <div id="text"><input type="text" name="" id="en_text" placeholder="Enter Text To Decrypt"></div>
+            <div id="key"><input type="text" id="en_key" placeholder="Key"></div>
+            <div id="Entext"><input type="text"  id="encrypted_text" placeholder="Encrypted Text"></div>
+            <span id="Enbutton"><input type="button" onclick="encypt()" value="Encrypt_text"> </button></span>
+            <span id="Debutton"><input type="button"id="abc" disabled onclick="decrypt()" value="Decrypt Text"></button></span>
+        </div>
     </div>
-
-    <!-- <div id="Endiv">
-        <span>Enter text to encode</span><input type="text"  id="en_text"><br>
-        <span>Your Key is</span><input type="text" id="en_key"><br>
-        <span>Encrypted Text is</span><input type="text"  id="encrypted_text">
-    </div> -->
+    <div id="show_en_table">
+        <h2>Encrypt Table</h2>
+        <table id="en_table">
+            <tr>
+                <td>Text</td>
+                <td>Key</td>
+                <td>Encrypted Text</td>
+            </tr>
+        </table>
+    </div>
+    <div id="show_de_table">
+        <h2>Decrypt Table</h2>
+        <table id="de_table">
+            <tr>
+                <td>Text</td>
+                <td>Key</td>
+                <td>Encrypted Text</td>
+            </tr>
+        </table>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
